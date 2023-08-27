@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9feed6a93c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/Logo.png" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li class="dropdown">
+              <a href="#portfolio" class="dropbtn">PORTFOLIO</a>
+              <div class="dropdown-content">
+                <a href="#contact">Download Modelling Portfolio</a>
+              </div>
+            </li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#contact">CONTACT</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>Technical Polyglot</p>
+          <h1>Hey, everyone!</h1> -->
+        </div>
+      </div>
+    </div>
+    <!-- <-------- ABOUT ------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/about me.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">ABOUT ME</h1>
+            <p>
+              Hello, I'm Avanthika Sampath, a final year student at Chennai
+              Institute of Technology. I'm an aspiring business analyst with a
+              unique blend of skills in web development, design, data analysis,
+              and project management. As a member of WIA (Women In Analytics), a
+              TEDxWomen Speaker, and AIWA 2022 awardee by Diva Planet magazine,
+              I'm passionate about making a positive impact.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Business Analysis</span><br />Agile, Scrum, Data
+                  Analysis, Data Visualization, PowerBI
+                </li>
+                <li>
+                  <span>Front-End Web development</span><br />HTML, CSS,
+                  JavaScript, AngularJs
+                </li>
+                <li><span>Backend</span><br />Firebase</li>
+                <li><span>Database</span><br />MySQL</li>
+                <li><span>Programming Languages</span><br />Python, Java</li>
+                <li>
+                  <span>Support Skills</span><br />UI/UX, Machine Learning,
+                  Problem Solving
+                </li>
+                <li>
+                  <span>Support Software</span><br />Visual Studio Code, Git,
+                  Jira
+                </li>
+                <li>
+                  <span>Extra Skills</span><br />Public Speaking, Event and
+                  Community Management
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>January 2023 - May 2023</span><br />Intern Trainee at
+                  Kaar Technologies
+                </li>
+                <li>
+                  <span>October 2021 - April 2022</span><br />Business
+                  Analyst/Front-End developer at DigitranIT
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2020 - 2024</span><br />BE Computer Science at Chennai
+                  Institute of Technology
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------services---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-pen"></i>
+            <h2>Web/UI-UX/App Design</h2>
+            <p>
+              Unlock the potential of your online presence with expert web
+              design service where visually stunning and user-centric websites
+              that captivate your audience and drive business growth are
+              designed.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Business Analysis</h2>
+            <p>
+              Unlock growth opportunities and streamline operations with my
+              expert business analysis service by deep diving into your
+              processes, providing data-driven insights that drive informed
+              decisions and catalyze your business success.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web and Mobile App Developement</h2>
+            <p>
+              Transforming ideas into exceptional digital experiences by
+              crafting cutting-edge websites and applications that engage users,
+              elevate brands, and drive unparalleled growth.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------portfolio------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/Work - 1.jpeg" />
+            <div class="layer">
+              <h3>Sales Prediction</h3>
+              <p>
+                I led the creation of a web app for sales forecasting, employing
+                SARIMAX modeling for accurate periodic predictions. Integrated
+                seamlessly with POWERBI, it offers data-driven visual insights.
+              </p>
+              <a href="https://github.com/Avanthika-27/Sales_prediction"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work - 2.jpeg" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                Crafted a real-time weather app with Angular, featuring current
+                temperature and detailed weather data like wind speed and
+                humidity.
+              </p>
+              <a href="https://github.com/Avanthika-27/weatherapp"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work - 3.png" />
+            <div class="layer">
+              <h3>HR Dashboard</h3>
+              <p>
+                Led the development of a Power BI HR analysis dashboard,
+                enabling data-driven decisions.Interactive visualizations
+                illuminated crucial HR metrics, optimizing workforce management.
+              </p>
+              <a
+                href="https://app.powerbi.com/singleSignOn?experience=power-bi&ru=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Freports%2F1279bcdf-c9d4-448b-8a1d-94f3a3c64266%2FReportSection%3Fexperience%3Dpower-bi%26noSignUpCheck%3D1"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ---------contact-------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">CONTACT ME</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> savanthika2705@gmail.com</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/avanthika-sampath-0525231bb/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://instagram.com/avanthikasampath?igshid=MzRlODBiNWFlZA=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="Images/Avanthika_S_CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169 Made with <i class="fa-solid fa-heart"></i>  by Avanthika S </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px"
+      }
+
+
+
+
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyNWL3FCnk4NvuDvgUuvnYDGZFk7Iq_NmleRDgxWig14GuO0c5tzz3jkcXLAt8Acxc/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000);
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
